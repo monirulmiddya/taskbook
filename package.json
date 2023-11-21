@@ -1,4 +1,5 @@
 {
+  "homepage": "https://monirulmiddya.github.io/taskbook",
   "name": "react",
   "version": "1.0.0",
   "description": "React example starter project",
@@ -19,6 +20,7 @@
     "@mui/material": "^5.0.0",
     "@mui/styled-engine": "^5.11.11",
     "@mui/utils": "^5.11.13",
+    "gh-pages": "^6.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "^5.0.1",
@@ -32,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
